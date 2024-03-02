@@ -1,0 +1,19 @@
+spring:
+  jpa:
+    generate-ddl: false
+    hibernate:
+      ddl-auto: none
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include="*"
+#  endpoint:
+#    web:
+#      exposure:
+#        include=metrics,prometheus,health
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
